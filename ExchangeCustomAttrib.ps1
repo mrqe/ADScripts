@@ -23,10 +23,10 @@ Write-Host -ForegroundColor Green "Enter the value for Custom Attribute $AttNumb
 $CustAtt = Read-Host
 
 if($AttNumber -eq 1) {
-   Set-ADUser -Identity $Username -Replace @{extensionAttribute1="$CustAtt"}
- }elseif($AttNumber -eq 2) {
+    Set-ADUser -Identity $Username -Replace @{extensionAttribute1="$CustAtt"}
+}elseif($AttNumber -eq 2) {
     Set-ADUser -Identity $Username -Replace @{extensionAttribute2="$CustAtt"}
- }elseif($AttNumber -eq 3) {
+}elseif($AttNumber -eq 3) {
     Set-ADUser -Identity $Username -Replace @{extensionAttribute3="$CustAtt"}
 }elseif($AttNumber -eq 4) {
     Set-ADUser -Identity $Username -Replace @{extensionAttribute4="$CustAtt"}
