@@ -12,7 +12,7 @@ Write-Host -ForegroundColor Green "This script allows you to edit the custom exc
 Write-Host -ForegroundColor Green "----------"
 
 #Prompt for the User you would like to Edit
-Write-Host -ForegroundColor Green "Please enter the account name edit:"
+Write-Host -ForegroundColor Green "Please enter the account name to edit:"
 $Username = Read-Host
 
 #Prompt for the attribute to edit 1-5
